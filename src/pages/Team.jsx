@@ -29,8 +29,8 @@ const Team = () => {
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                 <div className="space-y-2 text-sm text-text-muted">
                   <p> 🧽{member.age} years old</p>
-                  <p> 🚓{member.city}</p>
-                  <p> 🚲{member.role}</p>
+                  <p> 🏙️{member.city}</p>
+                  <p> 📇{member.role}</p>
                 </div>
               </div>
             </div>

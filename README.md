@@ -14,3 +14,12 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+### Project customizations
+
+* Restyled with a new light palette (teal primary) and font families `Inter` (body) and `Poppins` (headings).
+* Original `About` & `Contact` pages removed; replaced by `Info` and `Reach Out` pages.
+* Page-specific content is stored in `src/components/PageData.js` for central management.
+
