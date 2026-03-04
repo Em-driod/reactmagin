@@ -8,6 +8,7 @@ const Profile = ({ name, age, city }) => {
     { label: 'Status', value: 'Active', icon: '✅' }
   ];
 
+
   return (
     <div className="animate-fadeIn">
       <header className="py-16 text-center">
@@ -33,10 +34,10 @@ const Profile = ({ name, age, city }) => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-8 p-4 bg-primary/10 border border-primary/20 rounded-lg">
           <p className="text-center text-text-muted">
-            These props were passed from the App component: 
+            These props were passed from the App component:
             <code className="block mt-2 text-sm bg-bg p-2 rounded">
               &lt;Profile name="{name}" age={age} city="{city}" /&gt;
             </code>

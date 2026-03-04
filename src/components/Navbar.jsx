@@ -33,6 +33,36 @@ const Navbar = () => {
                         `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
                     }>Team</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/local-storage" className={({ isActive }) =>
+                        `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
+                    }>📝 localStorage</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/why-state-management" className={({ isActive }) =>
+                        `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
+                    }>Why State?</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/state-types" className={({ isActive }) =>
+                        `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
+                    }>State Types</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/use-state" className={({ isActive }) =>
+                        `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
+                    }>useState</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/use-context" className={({ isActive }) =>
+                        `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
+                    }>useContext</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/state-best-practices" className={({ isActive }) =>
+                        `font-medium transition-colors ${isActive ? 'text-primary' : 'text-text-muted hover:text-primary'}`
+                    }>Best Practices</NavLink>
+                </li>
             </ul>
         </nav>
     );

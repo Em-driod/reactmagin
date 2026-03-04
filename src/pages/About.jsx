@@ -22,6 +22,7 @@ const About = () => {
                         <span className="block text-3xl font-bold text-primary">Vite</span>
                         <span className="text-text-muted text-sm uppercase tracking-wider">Build Tool</span>
                     </div>
+
                 </div>
             </section>
         </div>
