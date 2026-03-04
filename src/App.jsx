@@ -2,10 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Info from './pages/Info';
+import ReachOut from './pages/ReachOut';
 import Profile from './pages/Profile';
 import Team from './pages/Team';
+<<<<<<< HEAD
 import StateManagement from './pages/StateManagement';
 import UseState from './pages/UseState';
 import UseContext from './pages/UseContext';
@@ -14,15 +15,18 @@ import StateTypes from './pages/StateTypes';
 import StateBestPractices from './pages/StateBestPractices';
 import LocalStorage from './pages/LocalStorage';
 import './App.css';
+=======
+import './index.css';
+>>>>>>> d57cc548633b5467e97daa0e43e57b7c293d3ce5
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="profile" element={<Profile name="John Doe" age={25} city="New York" />} />
+        <Route path="info" element={<Info />} />
+        <Route path="reach" element={<ReachOut />} />
+        <Route path="profile" element={<Profile name="Larry price" age={25} city="New York" />} />
         <Route path="team" element={<Team />} />
         <Route path="local-storage" element={<LocalStorage />} />
         <Route path="why-state-management" element={<WhyStateManagement />} />

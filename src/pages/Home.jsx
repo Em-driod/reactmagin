@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="animate-fadeIn">
       <header className="py-16 text-center">
-        <h1 className="text-6xl font-bold mb-4 text-gradient">Welcome to My Love</h1>
+        <h1 className="text-6xl font-bold mb-4 text-gradient">Welcome to Marybro</h1>
         <p className="text-xl text-text-muted mb-8 max-w-2xl mx-auto">A beautiful exploration of modern web design with React Router and Tailwind CSS.</p>
         <div className="flex justify-center gap-4">
           <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white font-semibold rounded-lg transition-all hover:-translate-y-1 shadow-lg shadow-primary/20">
