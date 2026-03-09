@@ -77,13 +77,13 @@ const LocalStorage = () => {
             <div className="max-w-6xl mx-auto px-6 py-8">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold mb-4">📝 LocalStorage Notes</h1>
+                    <h1 className="text-4xl font-bold mb-4"> LocalStorage Notes</h1>
                     <p className="text-lg opacity-80">Your notes are saved in your browser - even after you close the tab!</p>
                     <button
                         onClick={() => setDarkMode(!darkMode)}
                         className="mt-4 px-4 py-2 rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors"
                     >
-                        {darkMode ? '☀️ Light' : '🌙 Dark'} Mode
+                        {darkMode ? ' Light' : ' Dark'} Mode
                     </button>
                 </div>
 
@@ -138,13 +138,13 @@ const LocalStorage = () => {
                                     type="submit"
                                     className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-semibold"
                                 >
-                                    📌 Save Note
+                                     Save Note
                                 </button>
                             </form>
 
                             {/* Storage Info */}
                             <div className={`mt-6 p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
-                                <h3 className="font-semibold mb-2">💾 Storage Info</h3>
+                                <h3 className="font-semibold mb-2"> Storage Info</h3>
                                 <div className="space-y-1 text-sm">
                                     <p>Total notes: {notes.length}</p>
                                     <p>Storage used: ~{JSON.stringify(notes).length} characters</p>
