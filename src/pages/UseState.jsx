@@ -20,7 +20,7 @@ const UseState = () => {
 
             {/* Example 1: Counter */}
             <div className="bg-blue-50 p-6 rounded-lg mb-8">
-                <h2 className="text-2xl font-semibold mb-4">🔢 Counter Example</h2>
+                <h2 className="text-2xl font-semibold mb-4"> Counter Example</h2>
                 <p className="mb-4">Click buttons to change the number:</p>
                 
                 <div className="flex items-center gap-4 mb-4">
@@ -48,7 +48,7 @@ const UseState = () => {
 
             {/* Example 2: Text Input */}
             <div className="bg-green-50 p-6 rounded-lg mb-8">
-                <h2 className="text-2xl font-semibold mb-4">✏️ Text Input Example</h2>
+                <h2 className="text-2xl font-semibold mb-4"> Text Input Example</h2>
                 <p className="mb-4">Type your name below:</p>
                 
                 <input
@@ -59,7 +59,7 @@ const UseState = () => {
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg mb-4 text-lg"
                 />
                 
-                {name && (
+                {name && ( 
                     <div className="bg-white p-4 rounded border">
                         <p className="text-lg">Hello, <strong>{name}</strong>! 👋</p>
                     </div>
@@ -74,7 +74,7 @@ const UseState = () => {
 
             {/* Example 3: Toggle */}
             <div className="bg-purple-50 p-6 rounded-lg mb-8">
-                <h2 className="text-2xl font-semibold mb-4">👁️ Show/Hide Example</h2>
+                <h2 className="text-2xl font-semibold mb-4"> Show/Hide Example</h2>
                 <p className="mb-4">Click the button to show or hide the secret message:</p>
                 
                 <button 
@@ -86,7 +86,7 @@ const UseState = () => {
                 
                 {isVisible && (
                     <div className="bg-yellow-100 p-4 rounded-lg border-2 border-yellow-300">
-                        <p className="text-lg font-semibold">🎉 This is the secret message!</p>
+                        <p className="text-lg font-semibold"> This is the secret message!</p>
                         <p>You can see it because isVisible is true!</p>
                     </div>
                 )}
@@ -100,7 +100,7 @@ const UseState = () => {
 
             {/* Key Points */}
             <div className="bg-gray-100 p-6 rounded-lg">
-                <h2 className="text-2xl font-semibold mb-4">📚 Key Points to Remember</h2>
+                <h2 className="text-2xl font-semibold mb-4"> Key Points to Remember</h2>
                 <ul className="space-y-3 text-lg">
                     <li className="flex items-start">
                         <span className="text-blue-500 mr-2">•</span>

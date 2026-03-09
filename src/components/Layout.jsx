@@ -10,7 +10,8 @@ const Layout = () => {
                 <Outlet />
             </main>
             <footer className="py-8 text-center border-t border-border text-text-muted">
-                <p>&copy; {new Date().getFullYear()} My Love Project. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} NexusHub. All rights reserved.</p>
+                <p className="text-sm mt-2">Mastering React State Management</p>
             </footer>
         </div>
     );
