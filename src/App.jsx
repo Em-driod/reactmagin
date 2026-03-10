@@ -6,7 +6,6 @@ import Info from './pages/Info';
 import ReachOut from './pages/ReachOut';
 import Profile from './pages/Profile';
 import Team from './pages/Team';
-<<<<<<< HEAD
 import StateManagement from './pages/StateManagement';
 import UseState from './pages/UseState';
 import UseContext from './pages/UseContext';
@@ -15,9 +14,6 @@ import StateTypes from './pages/StateTypes';
 import StateBestPractices from './pages/StateBestPractices';
 import LocalStorage from './pages/LocalStorage';
 import './App.css';
-=======
-import './index.css';
->>>>>>> d57cc548633b5467e97daa0e43e57b7c293d3ce5
 
 function App() {
   return (
