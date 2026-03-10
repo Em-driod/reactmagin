@@ -1,4 +1,4 @@
-1. What React Actually Is
+ 1. What React Actually Is
 
 React is a JavaScript library for building user interfaces, not just a framework.
 It’s component-based, declarative, and focused on state-driven UI.

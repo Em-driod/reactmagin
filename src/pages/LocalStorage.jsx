@@ -8,8 +8,8 @@ const LocalStorage = () => {
 
     // Load notes from localStorage on component mount
     useEffect(() => {
-        const savedNotes = localStorage.getItem('notes');
-        const savedTheme = localStorage.getItem('darkMode');
+        const savedNotes = localStorage.getItem('nexusHub-notes');
+        const savedTheme = localStorage.getItem('nexusHub-theme');
         
         if (savedNotes) {
             setNotes(JSON.parse(savedNotes));
@@ -22,14 +22,14 @@ const LocalStorage = () => {
 
     // Save notes to localStorage whenever they change
     useEffect(() => {
-        if (notes.length > 0 || localStorage.getItem('notes')) {
-            localStorage.setItem('notes', JSON.stringify(notes));
+        if (notes.length > 0 || localStorage.getItem('nexusHub-notes')) {
+            localStorage.setItem('nexusHub-notes', JSON.stringify(notes));
         }
     }, [notes]);
 
     // Save theme preference
     useEffect(() => {
-        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+        localStorage.setItem('nexusHub-theme', JSON.stringify(darkMode));
     }, [darkMode]);
 
     const addNote = (e) => {
@@ -53,16 +53,16 @@ const LocalStorage = () => {
     const clearAllNotes = () => {
         if (window.confirm('Are you sure you want to delete all notes?')) {
             setNotes([]);
-            localStorage.removeItem('notes');
+            localStorage.removeItem('nexusHub-notes');
         }
     };
 
     const getCategoryColor = (category) => {
         const colors = {
-            personal: 'bg-blue-100 border-blue-300',
-            work: 'bg-green-100 border-green-300',
-            ideas: 'bg-yellow-100 border-yellow-300',
-            important: 'bg-red-100 border-red-300'
+            personal: 'bg-teal-100 border-teal-300',
+            work: 'bg-emerald-100 border-emerald-300',
+            ideas: 'bg-cyan-100 border-cyan-300',
+            important: 'bg-blue-100 border-blue-300'
         };
         return colors[category] || 'bg-gray-100 border-gray-300';
     };
@@ -77,11 +77,11 @@ const LocalStorage = () => {
             <div className="max-w-6xl mx-auto px-6 py-8">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold mb-4">📝 LocalStorage Notes</h1>
+                    <h1 className="text-4xl font-bold mb-4">📝 NexusHub Notes</h1>
                     <p className="text-lg opacity-80">Your notes are saved in your browser - even after you close the tab!</p>
                     <button
                         onClick={() => setDarkMode(!darkMode)}
-                        className="mt-4 px-4 py-2 rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors"
+                        className="mt-4 px-4 py-2 rounded-lg bg-teal-500 text-white hover:bg-teal-600 transition-colors"
                     >
                         {darkMode ? '☀️ Light' : '🌙 Dark'} Mode
                     </button>
@@ -100,7 +100,7 @@ const LocalStorage = () => {
                                         type="text"
                                         value={newNote.title}
                                         onChange={(e) => setNewNote({...newNote, title: e.target.value})}
-                                        className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                                        className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} focus:ring-2 focus:ring-teal-500 focus:border-transparent`}
                                         placeholder="Enter note title..."
                                         maxLength={50}
                                     />
@@ -112,7 +112,7 @@ const LocalStorage = () => {
                                     <select
                                         value={newNote.category}
                                         onChange={(e) => setNewNote({...newNote, category: e.target.value})}
-                                        className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                                        className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} focus:ring-2 focus:ring-teal-500 focus:border-transparent`}
                                     >
                                         <option value="personal">🏠 Personal</option>
                                         <option value="work">💼 Work</option>
@@ -126,7 +126,7 @@ const LocalStorage = () => {
                                     <textarea
                                         value={newNote.content}
                                         onChange={(e) => setNewNote({...newNote, content: e.target.value})}
-                                        className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
+                                        className={`w-full px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} focus:ring-2 focus:ring-teal-500 focus:border-transparent`}
                                         placeholder="Write your note here..."
                                         rows={4}
                                         maxLength={200}
@@ -136,7 +136,7 @@ const LocalStorage = () => {
 
                                 <button
                                     type="submit"
-                                    className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-semibold"
+                                    className="w-full py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors font-semibold"
                                 >
                                     📌 Save Note
                                 </button>
@@ -219,7 +219,7 @@ const LocalStorage = () => {
                         <div className={`p-6 rounded-xl shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
                             <h3 className="text-xl font-semibold mb-4">🔧 How localStorage Works</h3>
                             <div className="grid md:grid-cols-2 gap-4">
-                                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-blue-50'}`}>
+                                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-teal-50'}`}>
                                     <h4 className="font-semibold mb-2">✅ What localStorage does:</h4>
                                     <ul className="text-sm space-y-1">
                                         <li>• Stores data in the browser</li>
